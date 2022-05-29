@@ -1,21 +1,21 @@
-//Import graphql
-import gql from 'graphql-tag';
+//import graphql
+import gql from "graphql-tag";
 
-//query GET_ME
+//GET_ME (get the user data)
 export const GET_ME = gql`
-    {
-        me {
-            _id
-            username
-            email
-            savedBooks {
-                bookId
-                authors
-                image  
-                title
-                description
-                link
-            }
-        }
+  {
+    me {
+      _id
+      username
+      email
+      savedBooks {
+        title
+        bookId
+        authors
+        description
+        image
+        link
+      }
     }
+  }
 `;
